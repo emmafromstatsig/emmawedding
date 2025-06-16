@@ -8,9 +8,37 @@
       font-family: Georgia, serif;
       background-color: #fdf6e3;
       color: #333;
-      padding: 2em;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background-color: #e0f7f1;
+      text-align: center;
+      padding: 2em 1em 1em;
+    }
+
+    header img {
+      max-width: 80px;
+    }
+
+    nav {
+      background-color: #cceae4;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .container {
       max-width: 700px;
       margin: auto;
+      padding: 2em;
     }
 
     h1, h2 {
@@ -40,74 +68,102 @@
       margin: 0 0 1em 0.5em;
     }
 
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9em;
       color: #666;
-      margin-top: 4em;
+      margin: 4em 0 2em;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p style="text-align: center;">John & Emma are getting married... sort of! 🎉</p>
 
-  <div class="section">
-    <h2>The Party</h2>
-    <p><strong>Date:</strong> Friday, March 7, 2026<br>
-    <strong>Location:</strong> Headwaters Events Center, Winter Park, CO</p>
-    <p>We're eloping privately, but this is the main event we want you to come to. It'll be food, drinks, music, good company — no aisle, no vows, just a celebration.</p>
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Eo_circle_green_mountain.svg/1024px-Eo_circle_green_mountain.svg.png" alt="Mountain icon">
+  <h1>John & Emma Get Married!</h1>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#faq">FAQ</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#photos">Photos</a>
+</nav>
+
+<div class="container">
+
+  <div class="section" id="home">
+    <h2>Hello, World!</h2>
+    <p style="text-align: center;">John & Emma are getting married... sort of! 🎉</p>
+    <p style="text-align: center;">We're eloping, but this is the big celebration. Come party with us in Winter Park, Colorado!</p>
   </div>
 
-  <div class="section">
-    <h2>Weekend Schedule</h2>
+  <div class="section" id="schedule">
+    <h2>Schedule of Events</h2>
     <ul>
-      <li><strong>Friday Night:</strong> Welcome drinks at Idlewild Brewery 🍻</li>
+      <li><strong>Friday, March 6:</strong> Welcome drinks at Idlewild Brewery 🍻</li>
       <li><strong>Saturday Morning:</strong> Cross-country skiing at YMCA of the Rockies ⛷️</li>
-      <li><strong>Saturday Night:</strong> Wedding reception at Headwaters Events Center 💃🕺 <br> (We'll have transportation to and from the venue!)</li>
+      <li><strong>Saturday Night:</strong> Wedding reception at Headwaters Events Center 💃🕺 <br> (Transportation provided!)</li>
       <li><strong>Sunday:</strong> Optional hot springs soak at Hot Sulphur Springs ♨️</li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>How to Get There</h2>
-    <p>Winter Park is about 90 minutes from Denver. You’ve got a couple solid options:</p>
-    <ul>
-      <li><strong>🚗 Rent a car</strong> — Recommended if you want max flexibility</li>
-      <li><strong>🚆 Take the ski train</strong> — Amtrak’s Winter Park Express runs from Union Station in Denver straight to Winter Park (it’s scenic and cool)</li>
-    </ul>
-  </div>
-
-  <div class="section">
+  <div class="section" id="faq">
     <h2>FAQ</h2>
     <dl class="faq">
       <dt>Wait, I thought this was your wedding?</dt>
-      <dd>Technically it's our wedding party! We're eloping earlier just the two of us (less planning). This party is the celebration with everyone we love.</dd>
+      <dd>Technically it's our wedding party! We're eloping earlier just the two of us (less planning, more snacks). This party is the big celebration with everyone we love.</dd>
 
       <dt>What should I wear?</dt>
-      <dd>Something festive and comfortable — think mountain casual. There will be space to swap snow boots for heels if you feel so inclined. Jeans fine. Sweaters fine. Pls no white dresses.</dd>
+      <dd>Something festive and comfortable — no need for black tie unless you’re just feeling it.</dd>
 
       <dt>Can I bring my kids?</dt>
-      <dd>Yes! Kind of. If your crotch goblins are invited, we will specify on the invite 🙂</dd>
+      <dd>Yes! Kind of. If your crotch rockets are invited, we will specify on the invite 🙂</dd>
 
       <dt>Where should I stay?</dt>
       <dd>Winter Park has plenty of Airbnbs and hotels. We’ll share a few recommendations soon.</dd>
 
-      <dt>Will there be food and dancing?</dt>
+      <dt>How do I get there?</dt>
+      <dd>Winter Park is ~90 minutes from Denver. You can:
+        <ul>
+          <li>🚗 Rent a car (recommended)</li>
+          <li>🚆 Take the Winter Park Express ski train from Union Station</li>
+        </ul>
+      </dd>
+
+      <dt>Will there be food?</dt>
       <dd>Absolutely. Come hungry.</dd>
 
-       <dt>Do you want gifts?</dt>
-      <dd>Nope! Truly. Your presence means everything to us and we realize that getting to Winter Park isn't easy. That said, we’ve been told some folks will insist.<br><br>
-        - Our preferred option: a donation to <a href="https://www.givewell.org/" target="_blank">GiveWell</a><br>
-        - Less preferred (but still appreciated): a contribution to our <a href="https://example.com/honeymoon-fund" target="_blank">honeymoon fund</a></dd>
-      
+      <dt>Do you want gifts?</dt>
+      <dd>Nope! Truly. Your presence means everything to us. But if you're determined:
+        <br>– Preferred: donate to <a href="https://www.givewell.org/" target="_blank">GiveWell</a>
+        <br>– Optional: contribute to our <a href="https://example.com/honeymoon-fund" target="_blank">honeymoon fund</a>
+      </dd>
     </dl>
   </div>
 
-  <footer>
-    Made with ❤️ by John & Emma (with help from chatgpt) <br>
-    Last updated: June 2025
-  </footer>
+  <div class="section" id="photos">
+    <h2>Photos</h2>
+    <p>Some moments we love — more to come!</p>
+    <div class="photos">
+      <img src="https://via.placeholder.com/200x150" alt="Us being cute" width="200">
+      <img src="https://via.placeholder.com/200x150" alt="Elopement preview" width="200">
+      <img src="https://via.placeholder.com/200x150" alt="Planning chaos" width="200">
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Made with ❤️ by John & Emma • Last updated: June 2025
+</footer>
+
 </body>
 </html>
-
